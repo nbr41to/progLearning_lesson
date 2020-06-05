@@ -1,9 +1,84 @@
+header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.siteLogo {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
 .siteTitle {
-        color: blue;
-        background-color: orange;
-      }
+  /* 文字の装飾 */
+  color: blue;
+  font-size: 30px;
+  letter-spacing: 5px;
+  line-height: 50px;
+  font-family: fantasy;
 
+  background-color: orange;
+  /* デフォルトの余白を削除 */
+  margin: 0;
+  /* reset.cssを使おう */
+}
 
-ul{
-   list-style: none; 
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: paleturquoise;
+}
+
+li {
+  display: inline-block;
+  letter-spacing: 5px;
+  padding: 10px;
+  border-left: 3px solid tomato;
+  margin-top: 5px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid chocolate;
+  border-radius: 20px;
+  padding: 10px 30px;
+  margin: 20px 50px;
+}
+section div {
+  width: 50%;
+}
+
+section img {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 20px 50px;
+}
+
+.contentTtl {
+  font-size: 18px;
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  padding: 5px 20px;
+  border: 2px solid skyblue;
+}
+
+.contentTtl:after {
+  background-color: lightgrey;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  transform: rotate(-1deg);
+}
+
+small {
+   display: block;
+   margin: 0 auto;
+   text-align: center;
 }
