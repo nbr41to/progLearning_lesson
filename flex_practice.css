@@ -1,0 +1,18 @@
+.oya{
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: blue;
+    color: azure;
+}
+
+.item{
+    color: brown;
+    width:150px;
+    height: 150px;
+    background-color: aquamarine;
+    margin: 10px;
+}

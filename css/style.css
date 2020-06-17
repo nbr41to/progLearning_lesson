@@ -2,6 +2,7 @@ header {
   display: flex;
   justify-content: start;
   align-items: center;
+  margin: 10px;
 }
 .siteLogo {
   width: 50px;
@@ -11,7 +12,7 @@ header {
 .siteTitle {
   /* 文字の装飾 */
   color: blue;
-  font-size: 30px;
+  font-size: 3rem;
   letter-spacing: 5px;
   line-height: 50px;
   font-family: fantasy;
@@ -30,6 +31,7 @@ ul {
 }
 
 li {
+  font-size: 1.6rem;
   display: inline-block;
   letter-spacing: 5px;
   padding: 10px;
@@ -46,14 +48,20 @@ section {
   padding: 10px 30px;
   margin: 20px 50px;
 }
+
 section div {
   width: 50%;
+}
+
+section div p{
+font-size: 1.6rem;
 }
 
 section img {
   box-sizing: border-box;
   width: 50%;
   padding: 20px 50px;
+  margin: 0 10px;
 }
 
 .contentTtl {
@@ -77,8 +85,35 @@ section img {
   transform: rotate(-1deg);
 }
 
+/*　画面サイズが600pxからはここを読み込む　*/
+@media screen and (max-width: 600px) {
+  section {
+    flex-direction: column;
+    padding: 10px 50px;
+    margin: 10px 20px;
+  }
+  section div {
+    width: 100%;
+  }
+
+  section div p{
+font-size: 1.4rem;
+}
+
+  section img {
+    width: 60%;
+    padding: 10px;
+    object-fit: contain;
+  }
+}
+/* メディアクエリここまで */
+
+footer a {
+  font-size: 1.4rem;
+}
+
 small {
-   display: block;
-   margin: 0 auto;
-   text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }

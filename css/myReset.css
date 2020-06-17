@@ -1,0 +1,14 @@
+html {
+  font-size: 62.5%;
+  /* 10pxになる */
+  /* こっからは,remで調整する */
+  /* 例：1.5remで1.5倍の15px */
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
